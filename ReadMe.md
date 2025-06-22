@@ -27,3 +27,14 @@ This site is like my digital résumé and showcases my skills, projects, and how
 ##  Author
 **Jignasa Patel** 
 Portfolio Github link here.
+
+**Colour Scheme**
+
+|    Name   |      RGB      |   HEX   |
+|-----------|---------------|---------|
+| black     | 0, 0, 0       | #000000 |
+| White     | 0, 0, 0       | #000000 |
+| Navy      | 0, 0, 128     | #000080 |
+| skyblue   | 135, 206, 235 | #87CEEB |
+| lightblue | 173, 216, 230 | #ADD8E6 |
+| aliceblue | 240, 248, 255 | #F0F8FF |
