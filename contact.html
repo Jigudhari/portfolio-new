@@ -2,50 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us | Jignasa Patel</title>
-  <link rel="stylesheet" href="assets/css/contact_form.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Jignasa Patel</title>
+
+  <!-- Output from Tailwind build -->
+  <link rel="stylesheet" href="assets/css/site.css" />
 </head>
-<body>
+<body class="bg-theme-bg text-theme-text font-sans">
 
-<main>
-  <article class="form">
-    <header>
-      <h2>Contact Us</h2>
-    </header>
+  <main class="max-w-3xl mx-auto my-10 px-4">
+    <section class="bg-theme-orange text-white p-6 rounded-t-lg shadow text-center">
+      <h2 class="text-2xl font-bold">Contact Us</h2>
+    </section>
 
-    <form id="contactForm" novalidate>
+    <form id="contactForm" class="bg-white p-6 rounded-b-lg shadow space-y-6" novalidate>
+
       <!-- Name -->
-      <section class="section-row">
-        <label for="name">Name</label>
-        <div class="input-group">
-          <input type="text" id="name" class="form-input" />
-          <div id="nameError" class="error-text"></div>
+      <div class="flex flex-col md:flex-row md:items-start gap-4">
+        <label for="name" class="w-32 font-semibold pt-2">Name</label>
+        <div class="flex-1">
+          <input type="text" id="name" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-theme-peach" />
+          <p id="nameError" class="text-red-600 text-sm mt-1 h-5"></p>
         </div>
-      </section>
+      </div>
 
       <!-- Email -->
-      <section class="section-row">
-        <label for="email">Email</label>
-        <div class="input-group">
-          <input type="email" id="email" class="form-input" />
-          <div id="emailError" class="error-text"></div>
+      <div class="flex flex-col md:flex-row md:items-start gap-4">
+        <label for="email" class="w-32 font-semibold pt-2">Email</label>
+        <div class="flex-1">
+          <input type="email" id="email" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-theme-peach" />
+          <p id="emailError" class="text-red-600 text-sm mt-1 h-5"></p>
         </div>
-      </section>
+      </div>
 
       <!-- Message -->
-      <section class="section-row">
-        <label for="message">Message</label>
-        <div class="input-group">
-          <textarea id="message" rows="4" class="form-input"></textarea>
-          <div id="messageError" class="error-text"></div>
+      <div class="flex flex-col md:flex-row md:items-start gap-4">
+        <label for="message" class="w-32 font-semibold pt-2">Message</label>
+        <div class="flex-1">
+          <textarea id="message" rows="4" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-theme-peach"></textarea>
+          <p id="messageError" class="text-red-600 text-sm mt-1 h-5"></p>
         </div>
-      </section>
+      </div>
 
-      <button type="submit" class="submit-btn" id="submitBtn" disabled>Send</button>
+      <button type="submit" id="submitBtn"
+              class="w-full bg-theme-peach text-white font-semibold py-2 px-4 rounded-md hover:bg-theme-sunset-start transition disabled:opacity-50"
+              disabled>
+        Submit
+      </button>
     </form>
-  </article>
-</main>
-<script defer src="assets/js/contact_form.js"></script>
+  </main>
+
+  <script src="assets/js/contact_form.js" defer></script>
 </body>
 </html>
