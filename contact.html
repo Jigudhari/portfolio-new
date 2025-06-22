@@ -1,10 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Jignasa Patel</title>
+  <link rel="stylesheet" href="assets/css/contact_form.css" />
 </head>
 <body>
 
+<main>
+  <article class="form">
+    <header>
+      <h2>Contact Us</h2>
+    </header>
+
+    <form id="contactForm" novalidate>
+      <!-- Name -->
+      <section class="section-row">
+        <label for="name">Name</label>
+        <div class="input-group">
+          <input type="text" id="name" class="form-input" />
+          <div id="nameError" class="error-text"></div>
+        </div>
+      </section>
+
+      <!-- Email -->
+      <section class="section-row">
+        <label for="email">Email</label>
+        <div class="input-group">
+          <input type="email" id="email" class="form-input" />
+          <div id="emailError" class="error-text"></div>
+        </div>
+      </section>
+
+      <!-- Message -->
+      <section class="section-row">
+        <label for="message">Message</label>
+        <div class="input-group">
+          <textarea id="message" rows="4" class="form-input"></textarea>
+          <div id="messageError" class="error-text"></div>
+        </div>
+      </section>
+
+      <button type="submit" class="submit-btn" id="submitBtn" disabled>Send</button>
+    </form>
+  </article>
+</main>
+<script defer src="assets/js/contact_form.js"></script>
 </body>
 </html>
