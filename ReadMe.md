@@ -30,11 +30,11 @@ Portfolio Github link here.
 
 **Colour Scheme**
 
-|    Name   |      RGB      |   HEX   |
-|-----------|---------------|---------|
-| black     | 0, 0, 0       | #000000 |
-| White     | 0, 0, 0       | #000000 |
-| Navy      | 0, 0, 128     | #000080 |
-| skyblue   | 135, 206, 235 | #87CEEB |
-| lightblue | 173, 216, 230 | #ADD8E6 |
-| aliceblue | 240, 248, 255 | #F0F8FF |
+| Name        | RGB           | HEX     |
+|-------------|---------------|---------|
+| black       | 0, 0, 0       | #000000 |
+| White       | 0, 0, 0       | #000000 |
+| Feldspar    | 255, 209, 179 | #FFD1B3 |
+| Terra-cotta | 231, 118, 092 | #E7765C |
+| Snow        | 255, 249, 246 | #FFF9F6 |
+| Seashell    | 253, 240, 236 | #FDF0EC |
