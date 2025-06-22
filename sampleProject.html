@@ -2,9 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Title</title>
+    <link rel="stylesheet" href="assets/css/sample_project.css" />
 </head>
 <body>
-
-</body>
-</html>
+<main>
+    <article class="form">
+            <header>
+                <h2>Ninja API form</h2>
+            </header>
+            <section class="box">
+              <h3>Pick from the following API's</h3>
+              <div class="checkbox-group">
+            <label><input type="checkbox" id="sudokuCheckbox" name="api" value="sudoku"> Sudoku</label>
+            <label><input type="checkbox" id="NutritionCheckbox" name="api" value="nutrition"> Nutrition Value</label>
+          </div>
+            </section>
+            <section class="box">
+              <h3>Enter your input</h3>
+              <label for="userInput"></label>
+              <input type="text" id="userInput" placeholder="Enter difficulty level or food name">
+              <button id="submitBtn">Get Response</button>
+            </section>
+            <section class="box">
+              <h2>Hope you like the results!</h2>
+              <div id="responseArea">Your result will appear here...</div>
+        </section>
+          </article>
+    </main>
+    <script defer src="assets/js/sample_project.js"></script>
+    </body>
+    </html>
