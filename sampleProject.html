@@ -1,36 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Title</title>
-    <link rel="stylesheet" href="assets/css/sample_project.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sample Project | Ninja API Form</title>
+
+  <!-- Tailwind build output -->
+  <link rel="stylesheet" href="assets/css/site.css" />
 </head>
-<body>
-<main>
-    <article class="form">
-            <header>
-                <h2>Ninja API form</h2>
-            </header>
-            <section class="box">
-              <h3>Pick from the following API's</h3>
-              <div class="checkbox-group">
-            <label><input type="checkbox" id="sudokuCheckbox" name="api" value="sudoku"> Sudoku</label>
-            <label><input type="checkbox" id="NutritionCheckbox" name="api" value="nutrition"> Nutrition Value</label>
-          </div>
-            </section>
-            <section class="box">
-              <h3>Enter your input</h3>
-              <label for="userInput"></label>
-              <input type="text" id="userInput" placeholder="Enter difficulty level or food name">
-              <button id="submitBtn">Get Response</button>
-            </section>
-            <section class="box">
-              <h2>Hope you like the results!</h2>
-              <div id="responseArea">Your result will appear here...</div>
-        </section>
-          </article>
-    </main>
-    <script defer src="assets/js/sample_project.js"></script>
-    </body>
-    </html>
+<body class="bg-theme-bg text-theme-text font-sans">
+
+<main class="max-w-3xl mx-auto my-10 px-4">
+  <article class="rounded-lg shadow overflow-hidden">
+
+    <!-- Header bar -->
+    <header class="bg-theme-peach text-white text-center py-5">
+      <h2 class="text-2xl font-bold">Ninja API Form</h2>
+    </header>
+
+    <!-- API Selection -->
+    <section class="bg-white border border-theme-orange p-6 rounded-none md:rounded-t-lg">
+      <h3 class="text-xl font-semibold text-center mb-4">Pick from the following API's</h3>
+      <div class="flex justify-center gap-6">
+        <label class="font-semibold"><input type="checkbox" id="sudokuCheckbox" value="sudoku" class="mr-2"> Sudoku</label>
+        <label class="font-semibold"><input type="checkbox" id="NutritionCheckbox" value="nutrition" class="mr-2"> Nutrition Value</label>
+      </div>
+    </section>
+
+    <!-- Input Section -->
+    <section class="bg-white border border-theme-orange border-t-0 p-6">
+      <h3 class="text-xl font-semibold text-center mb-4">Enter your input</h3>
+      <div class="max-w-md mx-auto">
+        <input type="text" id="userInput" placeholder="Enter difficulty level or food name"
+               class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-theme-peach" />
+        <button id="submitBtn"
+                class="mt-4 w-full bg-theme-sunset-start text-white py-2 rounded-md font-semibold hover:bg-theme-peach transition">
+          Get Response
+        </button>
+      </div>
+    </section>
+
+    <!-- Result Section -->
+    <section class="bg-white border border-theme-orange border-t-0 p-6 rounded-b-lg">
+      <h2 class="text-xl font-semibold text-center mb-2">Hope you like the results!</h2>
+      <p id="responseArea" class="text-center text-sm italic text-gray-600">
+        Your result will appear here...
+      </p>
+    </section>
+
+  </article>
+</main>
+
+<!-- Your API JS (if used) -->
+<script src="assets/js/sample_project.js" defer></script>
+</body>
+</html>
