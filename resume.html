@@ -1,10 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="assets/css/site.css" />
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <title>Jignasa Patel portfolio</title>
+  <script src="assets/js/script.js"></script>
 </head>
-<body>
+
+<body class="bg-theme-bg text-theme-text font-sans">
+
+  <!-- ✅ Responsive Sticky Header -->
+  <header class="sticky top-0 z-50 bg-white shadow-md px-4 py-5 flex items-center justify-between">
+    <img src="assets/images/logo1.png" alt="Jignasa Patel Logo" class="h-14 w-auto" />
+
+    <!-- Hamburger for mobile -->
+    <button id="menuBtn" class="md:hidden text-theme-orange text-2xl focus:outline-none">&#9776;</button>
+
+    <!-- Nav Links -->
+    <nav id="menu" class="hidden md:flex space-x-6 text-theme-text font-bold">
+      <a href="home.html" class="hover:text-theme-orange">Home</a>
+      <a href="about.html" class="hover:text-theme-orange">About</a>
+      <a href="projects.html" class="hover:text-theme-orange">Projects</a>
+      <a href="sampleProject.html" class="hover:text-theme-orange">Sample Project</a>
+      <a href="resume.html" class="hover:text-theme-orange">Resume</a>
+      <a href="contact.html" class="hover:text-theme-orange">Contact</a>
+    </nav>
+  </header>
+
+  <!--Hero Section -->
+  <main class="p-6 max-w-6xl mx-auto">
+    <section id="hero" class="flex flex-col md:flex-row items-center justify-between gap-10">
+      <div class="bg-theme-sunset-end p-2 rounded-2xl inline-block shadow-lg">
+       <img src="assets/images/Portraits-5a.jpg" alt="Jignasa Patel Portrait"
+       class="w-64 md:w-80 rounded-2xl" />
+      </div>
+      <div class="text-center md:text-left md:flex-1">
+        <h1 class="text-3xl md:text-4xl font-bold leading-2.25">
+          "Resume: A snapshot of my skills, experience, and learning journey"
+        </h1>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="about" class="mt-16 max-w-5xl mx-auto">
+      <h2 class="text-4xl font-extrabold text-theme-orange mb-4 tracking-wide font-serif">Resume</h2>
+      <div class="text-lg md:text-xl leading-relaxed font-semibold font-sans space-y-6">
+          <p>Here you’ll find my professional background, technical skills, certifications, and current studies at TAFE.
+            From pharmacy to programming, this journey reflects my passion for continuous learning and building
+            solutions that matter.</p>
+
+        <!-- Résumé wrapper -->
+<section
+  class="bg-white max-w-[210mm]   /* ≈ A4 width */
+         mx-auto my-12           /* center & add top/bottom space */
+         p-8 md:p-12             /* generous inner padding */
+         border border-gray-300  /* thin light border */
+         shadow-lg rounded-md    /* subtle depth & soft corners */
+         print:shadow-none       /* remove shadow when printing */">
+        <h2 class="text-4xl font-extrabold text-theme-peach mb-4 tracking-wide font-serif">Profile</h2>
+        <div class="text-lg md:text-xl leading-relaxed font-normal font-sans space-y-6">
+                    <p class="text-base leading-relaxed font-sans">Seeking a transformative career shift into Technology Developer,
+                      backed by completing the rigorous She Codes Plus program, which
+                     provided experience building projects in Python, Django, HTML,
+                     CSS, JavaScript, and React JS. Currently pursuing a Certificate IV
+                     in Programming at TAFE, I am enhancing my skills in object
+                    oriented programming (OOP) with languages like Python and C#,
+                     along with SQL and Git, while working on innovative projects.
+                     Dedicated to continuous learning, I am excited to leverage my
+                     diverse skill set and passion for technology to contribute to
+                     impactful technology development projects.</p>
+        </div>
+
+        <h2 class="text-4xl font-extrabold text-theme-peach  mb-4 tracking-wide font-serif">Skills</h2>
+        <div class="text-lg md:text-xl leading-relaxed font-semibold font-sans space-y-6">
+            <h3 class="text-2xl font-bold mt-6 mb-2 font-serif tracking-wide">Coding skills</h3>
+            ·C#
+           ·Python
+           ·Django
+           REST
+           ·JavaScript
+           ·React JS
+           ·HTML/CSS
+
+          <h3 class="text-2xl font-bold mt-6 mb-2 font-serif tracking-wide">Technical skills</h3>
+          ·SQL database management
+          ·Git version control system
+
+            <h3 class="text-2xl font-bold mt-6 mb-2 font-serif tracking-wide">Soft skills</h3>
+           ·Strong organisation skill
+           ·Teamwork
+           ·Attention to details
+           ·Critical thinking
+           ·Problem solving
+           ·Customer service
+           ·Time management
+           ·Communication skills
+          </p>
+        </div>
+
+          <h2 class="text-4xl font-extrabold text-theme-peach  tracking-wide font-serif">Experience/Projects</h2>
+          <div class="text-lg md:text-xl leading-relaxed font-semibold font-sans space-y-6">
+          <h3 class="text-2xl font-bold mt-6 mb-2 font-serif tracking-wide">Hands-On Learning through Project Engagement</h3>
+          <h4 class="text-xl font-semibold text-theme-text font-serif mt-4">North Metropolitan TAFE          2024-2025 </h4>
+              <h4 class="text-xl font-semibold text-theme-text font-serif mt-4">C# Exploration – Crafting a Lottery Program Adventure</h4>
+          <p class="text-base leading-relaxed font-sans">– A C#project using WPF to develop a lottery program, focusing on building game logic and improving user experience.</p>
+              <h4 class="text-xl font-semibold text-theme-text font-serif mt-4">C# with WPF – Recruitment System Project</h4>
+          <p class="text-base leading-relaxed font-sans">– A C#project using WPF to develop a lottery program, focusing on building game logic and improving user
+            experience. A recruitment system management tool created with C# and WPF, designed to handle contractor and
+            job assignments efficiently.</p>
+               <h4 class="text-xl font-semibold text-theme-text font-serif mt-4">SQL Database with Front End C# and WPF</h4>
+                <p class="text-base leading-relaxed font-sans">Creating Employee Tables – A project combining SQL and C# with WPF to manage
+               employee data and create an employee table in a database.</p>
+               <h4 class="text-xl font-semibold text-theme-text font-serif mt-4">Python Joyride</h4>
+                <p class="text-base leading-relaxed font-sans">Bringing Smiles to Life with Code – Smiley Project– A Python project to create a smiley face visual,
+                  demonstrating basic programming concepts and user interaction.
+                 <h3 class="text-2xl font-bold mt-6 mb-2 font-serif tracking-wide">Python Project</h3>
+                  <p class="text-base leading-relaxed font-sans">Creating Wordle Game – A Python-based version of the Wordle game, implementing game
+                  logic, user input validation, and scoring systems.</p>
+                 <h4 class="text-xl font-semibold text-theme-text font-serif mt-4">Python with Git</h4>
+               <p class="text-base leading-relaxed font-sans">Car Park Project – A Python project to manage car
+               park spaces with version control using Git, focusing on collaborative
+               development and code management</p>
+      </div>
+    </section>
+   </div>
+  </main>
+
+  <!-- ✅ Footer -->
+  <footer class="bg-theme-sunset-end text-theme-text p-8 mt-16 border-t">
+    <div class="flex flex-col md:flex-row justify-between gap-10">
+
+      <!-- Social Links: Larger Text + Icons -->
+      <div class="flex flex-col items-center md:items-start space-y-3">
+        <h2 class="text-2xl font-bold">Get in touch</h2>
+        <div class="flex space-x-5">
+          <a href="https://www.instagram.com/jigudhari_23/?hl=en">
+            <img src="assets/images/insta1.png" alt="Instagram" class="h-7 w-7" />
+          </a>
+          <a href="https://www.linkedin.com/in/jignasa-patel-84a595240/">
+            <img src="assets/images/ld1.png" alt="LinkedIn" class="h-7 w-7" />
+          </a>
+          <a href="https://github.com/Jigudhari">
+            <img src="assets/images/github.png" alt="GitHub" class="h-7 w-7" />
+          </a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="w-full md:w-1/2">
+        <form action="https://formspree.io/f/xnqklbdg" method="POST" class="space-y-4">
+          <div>
+            <label for="firstname" class="block font-semibold">Name</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Name..."
+              class="w-full border p-2 rounded" />
+          </div>
+          <div>
+            <label for="email" class="block font-semibold">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email..." class="w-full border p-2 rounded" />
+          </div>
+          <div>
+            <label for="message" class="block font-semibold">Message</label>
+            <textarea id="message" name="message" placeholder="Please leave me a message"
+              class="w-full border p-2 rounded h-24"></textarea>
+          </div>
+          <div>
+            <button type="submit" class="bg-theme-bg hover:bg-theme-orange px-4 py-2 rounded font-bold text-theme-text border">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ✅ Copyright Outside Footer -->
+  <div class="text-center text-base bg-theme-bg text-theme-text py-2 sticky bottom-0 shadow-inner">
+    &copy; Jignasa Patel 2025
+  </div>
 
 </body>
+
 </html>
