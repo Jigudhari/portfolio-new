@@ -26,7 +26,7 @@ This site is like my digital résumé and showcases my skills, projects, and how
 
 ##  Author
 **Jignasa Patel** 
-Portfolio Github link here.
+https://jigudhari.github.io/portfolio-new/
 
 **Colour Scheme**
 
