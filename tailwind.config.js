@@ -1,3 +1,4 @@
+// @ts-check
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -15,7 +16,11 @@ module.exports = {
         'theme-bg': '#FFF9F6',
         'theme-text': '#3C2E2A',
         'theme-light': '#FDF0EC',
-      }
+      },
+    fontFamily: {
+    sans: ['Poppins', 'sans-serif'], // overrides font-sans
+    serif: ['Playfair Display', 'serif'],
+  }
     },
   },
   plugins: [],
