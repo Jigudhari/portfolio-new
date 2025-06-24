@@ -1,10 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="assets/css/site.css" />
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <title>Jignasa Patel portfolio</title>
+  <script src="assets/js/script.js"></script>
 </head>
-<body>
+
+<body class="bg-theme-bg text-theme-text font-sans">
+
+  <!-- ✅ Responsive Sticky Header -->
+  <header class="sticky top-0 z-50 bg-white shadow-md px-4 py-5 flex items-center justify-between">
+    <img src="assets/images/logo1.png" alt="Jignasa Patel Logo" class="h-14 w-auto" />
+
+    <!-- Hamburger for mobile -->
+    <button id="menuBtn" class="md:hidden text-theme-orange text-2xl focus:outline-none">&#9776;</button>
+
+    <!-- Nav Links -->
+    <nav id="menu" class="hidden md:flex space-x-6 text-theme-text font-bold">
+      <a href="home.html" class="hover:text-theme-orange">Home</a>
+      <a href="about.html" class="hover:text-theme-orange">About</a>
+      <a href="projects.html" class="hover:text-theme-orange">Projects</a>
+      <a href="sampleProject.html" class="hover:text-theme-orange">Sample Project</a>
+      <a href="resume.html" class="hover:text-theme-orange">Resume</a>
+      <a href="contact.html" class="hover:text-theme-orange">Contact</a>
+    </nav>
+  </header>
+
+  <!--Hero Section -->
+  <main class="p-6 max-w-6xl mx-auto">
+    <section id="hero" class="flex flex-col md:flex-row items-center justify-between gap-10">
+      <div class="bg-theme-sunset-end p-2 rounded-2xl inline-block shadow-lg">
+       <img src="assets/images/Portraits-1a.jpg" alt="Jignasa Patel Portrait"
+       class="w-64 md:w-80 rounded-2xl" />
+      </div>
+      <div class="text-center md:text-left md:flex-1">
+        <h1 class="text-3xl md:text-4xl font-bold leading-2.25">
+          "Learn more about my journey into software development and what drives me."
+        </h1>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="mt-16 max-w-5xl mx-auto">
+      <h2 class="text-4xl font-extrabold text-theme-orange mb-4 tracking-wide font-serif">About Me</h2>
+      <div class="text-lg md:text-xl leading-relaxed font-semibold font-sans space-y-6">
+          <p>My journey into software development began with a love for solving problems and helping people, something I
+          brought from my career in pharmacy. Now, I’m diving into full-stack development with tools like Python, C#,
+          SQL, and web technologies. I’m currently studying at TAFE and expanding my knowledge every day.</p>
+
+          <p>Beyond coding, I cherish spending quality time with my family, whether it's enjoying vacations, camping
+          adventures, or simple day outings. Cooking and baking are my creative outlets, and I certainly savor indulging
+          in delicious meals. Maintaining a healthy lifestyle is essential to me, which is why you'll often find me at
+          the gym bright and early. I thrive on outdoor activities and staying active.</p>
+
+          <p>Curious to learn more about me? I am just a message away!</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ✅ Footer -->
+  <footer class="bg-theme-sunset-end text-theme-text p-8 mt-16 border-t">
+    <div class="flex flex-col md:flex-row justify-between gap-10">
+
+      <!-- Social Links: Larger Text + Icons -->
+      <div class="flex flex-col items-center md:items-start space-y-3">
+        <h2 class="text-2xl font-bold">Get in touch</h2>
+        <div class="flex space-x-5">
+          <a href="https://www.instagram.com/jigudhari_23/?hl=en">
+            <img src="assets/images/insta1.png" alt="Instagram" class="h-7 w-7" />
+          </a>
+          <a href="https://www.linkedin.com/in/jignasa-patel-84a595240/">
+            <img src="assets/images/ld1.png" alt="LinkedIn" class="h-7 w-7" />
+          </a>
+          <a href="https://github.com/Jigudhari">
+            <img src="assets/images/github.png" alt="GitHub" class="h-7 w-7" />
+          </a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="w-full md:w-1/2">
+        <form action="https://formspree.io/f/xnqklbdg" method="POST" class="space-y-4">
+          <div>
+            <label for="firstname" class="block font-semibold">Name</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Name..."
+              class="w-full border p-2 rounded" />
+          </div>
+          <div>
+            <label for="email" class="block font-semibold">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email..." class="w-full border p-2 rounded" />
+          </div>
+          <div>
+            <label for="message" class="block font-semibold">Message</label>
+            <textarea id="message" name="message" placeholder="Please leave me a message"
+              class="w-full border p-2 rounded h-24"></textarea>
+          </div>
+          <div>
+            <button type="submit" class="bg-theme-bg hover:bg-theme-orange px-4 py-2 rounded font-bold text-theme-text border">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ✅ Copyright Outside Footer -->
+  <div class="text-center text-base bg-theme-bg text-theme-text py-2 sticky bottom-0 shadow-inner">
+    &copy; Jignasa Patel 2025
+  </div>
 
 </body>
+
 </html>
